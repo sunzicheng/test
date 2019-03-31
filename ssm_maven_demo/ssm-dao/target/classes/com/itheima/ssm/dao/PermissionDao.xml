@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.itheima.ssm.dao.PermissionDao">
+
+    <!--查看所有权限列表-->
+    <select id="findAllPermission" resultType="permission">
+        select * from permission
+    </select>
+
+    <!--保存新的权力-->
+    <insert id="savePermission" parameterType="permission">
+        INSERT INTO `permission`(permissionName,url) VALUES (#{permissionName},#{url})
+    </insert>
+
+    <!--根据Id删除权力-->
+    <delete id="delPermission" parameterType="long">
+        delete from `permission` where id = #{id}
+    </delete>
+</mapper>

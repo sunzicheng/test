@@ -1,0 +1,7 @@
+com\itheima\ssm\po\SysLog.class
+com\itheima\ssm\po\Role.class
+com\itheima\ssm\po\Permission.class
+com\itheima\ssm\po\Member.class
+com\itheima\ssm\po\User.class
+com\itheima\ssm\po\Product.class
+com\itheima\ssm\po\Orders.class
